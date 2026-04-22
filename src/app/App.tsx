@@ -65,7 +65,7 @@ export default function App() {
     <div className="size-full bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex flex-col items-center justify-center p-4">
       <div className="mb-8 flex items-center gap-3">
         <Heart className="w-10 h-10 text-pink-500 fill-pink-500" />
-        <h1 className="text-4xl text-gray-800">LoveSwipe</h1>
+        <h1 className="text-4xl text-gray-800">ZOLU</h1>
       </div>
 
       <div className="relative w-full max-w-sm h-[600px]">

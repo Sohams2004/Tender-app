@@ -62,39 +62,41 @@ export default function App() {
   const currentProfile = profiles[currentIndex];
 
   return (
-    <div className="size-full bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex flex-col items-center justify-center p-4">
-      <div className="mb-8 flex items-center gap-3">
-        <Heart className="w-10 h-10 text-pink-500 fill-pink-500" />
-        <h1 className="text-4xl text-gray-800">ZOLU</h1>
+    <div className="fixed inset-0 bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100 flex flex-col items-center justify-between overflow-hidden">
+      <div className="w-full flex items-center justify-center gap-3 pt-safe pt-6 pb-4 px-4">
+        <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-pink-500 fill-pink-500" />
+        <h1 className="text-3xl sm:text-4xl text-gray-800">ZOLU</h1>
       </div>
 
-      <div className="relative w-full max-w-sm h-[600px]">
-        <motion.div
-          style={{ x, rotate, opacity }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          onDragEnd={handleDragEnd}
-          className="absolute inset-0 cursor-grab active:cursor-grabbing"
-        >
-          <ProfileCard
-            {...currentProfile}
-            onSwipeLeft={() => handleSwipe('left')}
-            onSwipeRight={() => handleSwipe('right')}
-          />
-        </motion.div>
-
-        {currentIndex < profiles.length - 1 && (
-          <div className="absolute inset-0 -z-10 scale-95 opacity-50">
+      <div className="flex-1 w-full max-w-sm px-4 flex items-center justify-center">
+        <div className="relative w-full aspect-[3/4] max-h-[calc(100vh-200px)]">
+          <motion.div
+            style={{ x, rotate, opacity }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            onDragEnd={handleDragEnd}
+            className="absolute inset-0 cursor-grab active:cursor-grabbing touch-none"
+          >
             <ProfileCard
-              {...profiles[currentIndex + 1]}
-              onSwipeLeft={() => {}}
-              onSwipeRight={() => {}}
+              {...currentProfile}
+              onSwipeLeft={() => handleSwipe('left')}
+              onSwipeRight={() => handleSwipe('right')}
             />
-          </div>
-        )}
+          </motion.div>
+
+          {currentIndex < profiles.length - 1 && (
+            <div className="absolute inset-0 -z-10 scale-95 opacity-50">
+              <ProfileCard
+                {...profiles[currentIndex + 1]}
+                onSwipeLeft={() => {}}
+                onSwipeRight={() => {}}
+              />
+            </div>
+          )}
+        </div>
       </div>
 
-      <div className="mt-8 text-center text-gray-600">
+      <div className="w-full pb-safe pb-6 pt-4 text-center text-gray-600 px-4">
         <p className="text-sm">Swipe or drag cards to explore profiles</p>
         <p className="text-xs mt-1">{currentIndex + 1} / {profiles.length}</p>
       </div>

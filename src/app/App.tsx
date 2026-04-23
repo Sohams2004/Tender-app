@@ -11,7 +11,7 @@ const profiles = [
     name: "Rowan",
     age: 24,
     bio: "I love cooking for people I care about",
-    image: "https://drive.google.com/file/d/1JgGiQk59gZhHqmE2gMt6paf4tod4cbyh/view?usp=sharing"
+    image: "https://i.ibb.co/8p9LLT0/Whats-App-Image-2026-04-23-at-4-49-59-PM.jpg"
   },
   {
     id: 2,

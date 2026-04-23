@@ -8,19 +8,19 @@ import { Heart } from 'lucide-react';
 const profiles = [
   {
     id: 1,
-    name: "john",
-    age: 25,
-    bio: "blah blah blah",
-    image: "https://t4.ftcdn.net/jpg/02/98/28/89/360_F_298288984_8i0PB7s9aWPzi1LeuNGGrnjXkmXRpcZn.jpg"
+    name: "Rowan",
+    age: 24,
+    bio: "I love cooking for people I care about",
+    image: "https://drive.google.com/file/d/1JgGiQk59gZhHqmE2gMt6paf4tod4cbyh/view?usp=drive_link"
   }
-  /*{
+  {
     id: 2,
-    name: "Another Person",
+    name: "",
     age: 28,
     bio: "Customize this bio with their interests and personality",
     image: "https://via.placeholder.com/400x600/9370DB/FFFFFF?text=Add+Your+Image"
   },
-  {
+  /*{
     id: 3,
     name: "Person Three",
     age: 26,

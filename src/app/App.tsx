@@ -18,7 +18,7 @@ const profiles = [
     name: "Arseny",
     age: 22,
     bio: "Techie and a golf enthusiast. Here to make long lasting connection!",
-    image: "https://i.ibb.co/7NrZg6g5/Whats-App-Image-2026-04-24-at-4-04-28-PM.jpg"
+    image: "https://i.ibb.co/5hY9jqrL/Whats-App-Image-2026-04-24-at-4-29-04-PM.jpg"
   }
   /*{
     id: 3,

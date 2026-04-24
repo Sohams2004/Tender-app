@@ -15,10 +15,10 @@ const profiles = [
   },
   {
     id: 2,
-    name: "",
-    age: 28,
-    bio: "Customize this bio with their interests and personality",
-    image: "https://via.placeholder.com/400x600/9370DB/FFFFFF?text=Add+Your+Image"
+    name: "Arseny",
+    age: 22,
+    bio: "Techie and a golf enthusiast. Here to make long lasting connection!",
+    image: "https://i.ibb.co/7NrZg6g5/Whats-App-Image-2026-04-24-at-4-04-28-PM.jpg"
   }
   /*{
     id: 3,
